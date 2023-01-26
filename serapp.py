@@ -4,6 +4,7 @@ import tensorflow as tf
 import os,urllib
 import numba
 from numba.np.ufunc import _internal
+from numba.np.ufunc.decorators import Vectorize, GUVectorize, vectorize, guvectorize
 import librosa # to extract speech features
 
 
