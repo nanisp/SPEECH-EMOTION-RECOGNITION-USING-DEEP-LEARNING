@@ -5,7 +5,6 @@ import os,urllib
 import librosa # to extract speech features
 
 
-
 def main():
     #print(cv2.__version__)
     selected_box = st.sidebar.selectbox(
