@@ -2,6 +2,8 @@ import streamlit as st
 import numpy as np    
 import tensorflow as tf
 import os,urllib
+from numba.np.ufunc import _internal
+from numba.np.ufunc.decorators import Vectorize, GUVectorize, vectorize, guvectorize
 import librosa # to extract speech features
 
 
@@ -32,7 +34,7 @@ def load_model():
     return model
 def application():
     models_load_state=st.text('\n Loading models..')
-    model=load_model()
+    #model=load_model()
     models_load_state.text('\n Models Loading..complete')
     
     
