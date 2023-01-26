@@ -22,7 +22,7 @@ def main():
 
 @st.cache(show_spinner=False)
 def get_file_content_as_string(path):
-    url = 'https://github.com/nanisp/SPEECH-EMOTION-RECOGNITION-USING-DEEP-LEARNING-MAIN' + path
+    url = 'https://github.com/nanisp/SPEECH-EMOTION-RECOGNITION-USING-DEEP-LEARNING-MAIN/blob/main/serapp.py' + path
     response = urllib.request.urlopen(url)
     return response.read().decode("utf-8")
     
