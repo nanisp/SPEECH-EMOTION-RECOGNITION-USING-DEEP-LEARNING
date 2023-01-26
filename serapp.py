@@ -2,7 +2,6 @@ import streamlit as st
 import numpy as np    
 import tensorflow as tf
 import os,urllib
-from numba.np.ufunc.decorators import Vectorize, GUVectorize, vectorize, guvectorize
 import librosa # to extract speech features
 
 
