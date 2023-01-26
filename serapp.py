@@ -3,6 +3,7 @@ import numpy as np
 import tensorflow as tf
 import os,urllib
 import numba
+from numba.np.ufunc import _internal
 import librosa # to extract speech features
 
 
